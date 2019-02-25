@@ -3,13 +3,11 @@
     $domain = "messages";
     bindtextdomain($domain, "Modules/find/locale");
     bind_textdomain_codeset($domain, 'UTF-8');
-    
-    $menu_dropdown[] = array(
-        'id'=>"find_menu_extras",
-        'name'=>_("Find Local Devices"), 
-        'path'=>"find" , 
-        'session'=>"read", 
+
+    $menu_right[] = array(
+        'id'=>"find_menu",
+        'name'=>_("Find Devices"),
+        'path'=>"find",
         'order' => 0,
-        'icon'=>'icon-search'
+        'icon'=>'icon-search icon-white'
     );
-    
